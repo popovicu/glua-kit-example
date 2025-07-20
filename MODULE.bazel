@@ -11,6 +11,8 @@ go_sdk.download(version = "1.24.0")
 bazel_dep(name = "glua_kit", version = "0.0.1")
 
 # TODO: to be eventually removed
+# The glua_kit module is not yet tracked in the Bazel registry, so we manually point to the Github repo.
+# Otherwise, this shouldn't exist.
 git_override(
     module_name = "glua_kit",
     commit = "74bcf87b47b69fb758ceebd5f39167a3530649c2",
